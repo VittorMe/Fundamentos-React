@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react';
 
+
+import Mega from './components/mega/Mega'
 import Contador from './components/contador/Contador'
 import Imput from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
@@ -11,10 +13,10 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
-import Card from './components/layout/Card';
+import Card from './components/layout/Card'
 import Aleatorio from './components/basicos/Aleatorio'
-import ComParametro from './components/basicos/ComParametro';
-import Primeiro from './components/basicos/Primeiro';
+import ComParametro from './components/basicos/ComParametro'
+import Primeiro from './components/basicos/Primeiro'
 
 
 export default () => {
@@ -22,19 +24,23 @@ export default () => {
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className="Cards">
-                
+
+                <Card titulo="#13-  Mega Sena" color="#B9006E">
+                    <Mega qte={6} />
+                </Card>
+
                 <Card titulo="#12-  Contador" color="#424242">
                     <Contador numeroInicial={10} />
                 </Card>
-                
+
                 <Card titulo="#11-  Componente Controlado(Imput)" color="#E45F56">
                     <Imput></Imput>
                 </Card>
-                
+
                 <Card titulo="#10-  Comunicação Indireta" color="#8BAD39">
                     <IndiretaPai></IndiretaPai>
                 </Card>
-                
+
                 <Card titulo="#09-  Comunicação Direta" color="#59323C">
                     <DiretaPai></DiretaPai>
                 </Card>
